@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "container">
+    <div class="logo">
+    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1ABBo6yjwT5F7xI_7qSC3WT6zKz2Rt0eHA&s" alt="Logo">
+    </div>
+    <h1>Welcome to Stasik hub</h1>
+    <h2>Sign up</h2>
+    <form>
+    <label for="Email">Email</label>
+    <input type="email" placeholder="Email" required>
+    <label for="password">Password</label>
+        <div class="password-container">
+            <input id="password" type="password" placeholder="Password" required>
+            <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png" alt="Show Password" class="eye-icon" id="togglePassword" width="24" height="24">
+        </div>
+    <button type="submit">Sign up</button>
+    </form>
+    <p>Already have an account? <a href="#">Sign in</a></p>
+</div>
+<script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    togglePassword.addEventListener('click', () => {
+        let type = 0;
+        if (passwordInput.type === 'password') {
+            type = 'text';
+        } else {
+            type = 'password';
+        }
+        passwordInput.type = type;
+
+        // Змінюємо іконку
+        if (type === 'password') {
+            togglePassword.src = 'https://cdn-icons-png.flaticon.com/512/159/159604.png';
+        } else {
+            togglePassword.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3_2sS1HqGyYf1iL7doJx9s61mOyIqLJSJA&s';
+        }
+    })
+</script>
+</body>
+</html>
