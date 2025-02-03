@@ -15,6 +15,9 @@ body {
     border-radius: 12px;
     
 }
+.hub{
+    color:black !important;
+}
 .logo{
     width: 200px;
     height: 200px;
