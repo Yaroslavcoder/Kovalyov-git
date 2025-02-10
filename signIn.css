@@ -1,41 +1,45 @@
 body {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     margin: 80px;
-    padding: 0;
-    background-color: #ffffff;
-    font-family: Work Sans sans-serif;
+    background: #ffffff;
+    font-family: "Work Sans", sans-serif;
 }
-
+#showDataButton {
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 100px;
+    height: 30px;
+}
 .container {
     text-align: center;
     background: white;
     padding: 50px;
     border-radius: 12px;
-    
 }
-.hub{
-    color:black !important;
-}
+
 .logo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 0 auto 16px;
 }
+
 h1 {
     font-size: 32px;
     margin: 8px;
     color: #ff7a00;
-    font-weight: Medium;
 }
 
 h2 {
     color: #271c08;
     font-weight: normal;
 }
-
+label{
+    color: gray;
+    display: flex;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -50,18 +54,19 @@ input {
     width: 100%;
     box-sizing: border-box;
 }
+
 .password-container {
     position: relative;
 }
-.password-container input {
-    padding-right: 50px;
-}
+
 .eye-icon {
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
     cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
 
 button {
@@ -79,10 +84,6 @@ button:hover {
     background: #ff7a00;
 }
 
-label{
-    color: gray;
-    display: flex;
-}
 .signin-link {
     margin-top: 16px;
     font-size: 14.4px;
@@ -96,3 +97,4 @@ label{
 .signin-link a:hover {
     text-decoration: underline;
 }
+
