@@ -1,4 +1,4 @@
-
+м
 const togglePassword = document.getElementById("togglePassword");
 const inputPassword = document.getElementById("password");
 
@@ -37,6 +37,7 @@ togglePassword.addEventListener("click", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const inputEmail = document.querySelector("input[type='email']");
+    const inputPassword = document.getElementById("password");
     const submitButton = document.querySelector("button");
     const showDataButton = document.createElement("button");
     showDataButton.id = "showDataButton";
@@ -50,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     inputEmail.addEventListener("input", function (event) {
         formData.email = event.target.value;
+    });
+
+    inputPassword.addEventListener("input", function (event) {
+        formData.password = event.target.value;
     });
 
     submitButton.addEventListener("click", function (event) {
