@@ -1,4 +1,4 @@
-м
+
 const togglePassword = document.getElementById("togglePassword");
 const inputPassword = document.getElementById("password");
 
