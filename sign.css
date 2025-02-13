@@ -5,16 +5,23 @@ body {
     margin: 80px;
     background: #ffffff;
     font-family: "Work Sans", sans-serif;
+    
 }
 #showDataButton {
     font-size: 12px;
     padding: 5px 10px;
     width: 100px;
     height: 30px;
+    margin: 80px;
 }
 .container {
+    width: 400px;
+    height: 505px;
+    position: absolute;
+    top: 208px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    background: white;
     padding: 50px;
     border-radius: 12px;
 }
@@ -24,10 +31,11 @@ body {
     height: 200px;
     border-radius: 50%;
     margin: 0 auto 16px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 40px;
     margin: 8px;
     color: #ff7a00;
 }
@@ -85,7 +93,7 @@ button:hover {
 }
 
 .signin-link {
-    margin-top: 16px;
+    margin-top: 19px;
     font-size: 14.4px;
 }
 
