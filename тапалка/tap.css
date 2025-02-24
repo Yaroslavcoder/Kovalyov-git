@@ -25,20 +25,16 @@ body {
     border-radius: 50%;
 }
 
-.user-details {
-    display: flex;
-    flex-direction: column;
-}
-
 .user-name {
     font-size: 14px;
-    color: #121212;
+    color: #61646B;
 }
 
 .coins {
     display: flex;
     align-items: center;
     gap: 4px;
+    color:#121212
 }
 
 .coin-icon {
@@ -76,10 +72,39 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     color: #61646B;
+    padding: 96px;
 }
 nav a:hover {
     color: #121212;
 }
+
+
+footer {
+    display: flex;
+    height: 72px;
+    background: #43464D;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 96px;
+}
+
+
+
+
+
+
+
 
 
 .stats-container {
@@ -102,12 +127,12 @@ nav a:hover {
     justify-content: flex-end;
     position: absolute;
     margin-top: -778px;
-    margin-left: 700px;
-
+    margin-left: 528px;
 }
 
 
 .stat-box {
+    box-sizing: content-box;
     background: #43464D;
     color: #ffffff;
     border: 1px solid #E0E0E0;
@@ -120,13 +145,11 @@ nav a:hover {
     gap: 12px;
 }
 .left-border {
-    border-left: 1px solid #E0E0E0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .right-border {
-    border-right: 1px solid #E0E0E0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -143,7 +166,7 @@ nav a:hover {
     padding: 16px;
     width: 384px;
     height: 108px;
-    margin-left: 245px;
+    margin-left: 86px;
     display: flex;
     gap: 15px;
     margin-bottom: 12px;
@@ -170,8 +193,8 @@ nav a:hover {
 }
 
 .image-placeholder {
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     border-radius: 10px;
     background-color: gray;
 }
@@ -188,41 +211,21 @@ nav a:hover {
     position: absolute;
     border-color: #AFB1B6;
     top: 400px;
-    left: 1150px;
+    left: 900px;
     background-color: #AFB1B6;
 }
 .scroll-button {
+    display: flex;
     width: 40px;
     height: 40px;
-    position: absolute;
-    top: 850px;
-    left: 550px;
-    background-color: #f4f4f4;
-    border: 2px solid #d1d1d1;
+    justify-self: center;
+    align-items: center;
+    border: 0;
     border-radius: 228px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: #43464D 6px 6px 6px;
 }
 .scroll-button img {
     width: 24px;
     height: 24px;
 }
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 72px;
-    background: #43464D;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
