@@ -13,7 +13,6 @@ body {
     background: #f8f8f8;
 }
 
-
 .user-info {
     display: flex;
     align-items: center;
@@ -89,7 +88,6 @@ nav a:hover {
     color: #121212;
 }
 
-
 footer {
     display: flex;
     height: 72px;
@@ -111,34 +109,43 @@ footer a {
 }
 
 
-.image-stat{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
+
+
+.center {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 110px;
+    gap: 110px;
 }
 
+main {
+    display: flex;
+    gap: 24px;
+    padding: 40px 0px 0px 0px; 
+    justify-content:center;
+} 
 .game-stats {
     display: flex;
     flex-direction: row; 
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    top: 120px;
-    left:770px
+    align-self: start;
+    justify-content: left;
+    gap:0px
 }
 
 .stat-box {
+    display: flex;
     background: #43464D;
     color: #ffffff;
     border: 1px solid #E0E0E0;
     display: flex;
-    align-items: start;
     padding: 24px;
     gap: 12px;
+
+}
+.stat-box p {
+    font-size: 16px;
+    color: #E0E0E0;
 }
 .left-border {
     border-left: 1px solid #E0E0E0;
@@ -150,108 +157,115 @@ footer a {
     border-right: 1px solid #E0E0E0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+
 }
 
 .shop {
     display: flex;
     flex-direction: column;
-    width: 55%;
-    padding: 36px 120px;
+    align-items: flex-start;
+
+    gap: 2px;
+    font-size: 16px;
+    
 }
-.modifier {
-    background: #f4f4f4;
+.modifier{
+    display: flex;
+    background: #FFFFFF;
     border: 2px solid #d1d1d1;
+    align-items: center;
     border-radius: 10px;
     padding: 16px;
-    width: 384px;
-    height: 108px;
-    margin-left: 245px;
-    display: flex;
     gap: 15px;
+    width: 100%;
+    font-size: 16px;
     margin-bottom: 12px;
 }
+
+
+
 .modifier p {
     margin-bottom: 2px;
     color: #61646B;
 }
+
 .price {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 5px;
+    gap: 8px;
 }
 
-.price button {
-    border-radius: 12px;
-    display: flex;
+.modifier button {
     border-radius: 12px;
     padding: 10px 16px;
-    border: none;
-    align-self: flex-end;
-    justify-self: flex-end;
-    position: absolute;
-    margin-left: 230px;
-    background-color: #E0E0E0;
+    margin-left: auto;
+    cursor: pointer;
+    align-items: center;
+    border:none;
+    margin: 28px 6px 2px auto;
 }
 
-.price button:hover {
+.modifier button:hover {
     background-color: #121212;
     color: #E0E0E0;
 }
 
-.image-placeholder {
-    width: 50px;
-    height: 50px;
+.modifier-img{
+    width: 48px;
+    height: 48px;
     border-radius: 10px;
     background-color: gray;
     justify-content: center;
-    align-items: center;
-    display: flex;
+    align-items: flex-start;
 }
-
+.image-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: gray;
+}
 .modifier:hover {
     border-color: #121212;
 }
 
 
+.click-container{
+    display: flex;
+    justify-content: flex-start;
+
+
+}
 .click-button {
+    display: flex;
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    position: absolute;
-    border-color: #AFB1B6;
-    top: 320px;
-    left: 880px;
-    background-color: #AFB1B6;
+    background-color: #424965;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    
 }
-.click-button img{
- max-width: 100%;
- max-height: 100%
-}
+
 .scroll-button {
     width: 40px;
     height: 40px;
-    position: absolute;
-    top: 670px;
-    left: 550px;
-    width: 40px;
-    height: 40px;
-    background-color: #f4f4f4;
+    background-color: #E0E0E0;
     border: 2px solid #d1d1d1;
     border-radius: 50%;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    justify-self: center;
+    align-self: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
-
-
 .scroll-button img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
 }
 
-
-
+.scroll-button:hover{
+    border-color: #121212;
+}
